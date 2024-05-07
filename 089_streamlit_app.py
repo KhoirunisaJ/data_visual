@@ -19,3 +19,15 @@ st.title("Bar Chart")
 st.xlabel('Day')
 st.ylabel('Tip')
 st.pyplot()
+
+# reading the database
+data = pd.read_csv("tips.csv")
+
+# Scatter plot using seaborn
+sns.scatterplot(x='day', y='tip', data=data, hue='sex')
+
+# Title for the plot
+plt.title("Scatter Plot")
+
+# Show plot in Streamlit app
+st.pyplot()
