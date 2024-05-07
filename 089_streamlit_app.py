@@ -9,6 +9,7 @@ st.title("My Dashboard")
 
 # Bagian visualisasi data
 st.header("Selamat Datang")
+st.subheader("Jumlah Tips per hari")
 
 # Bar chart with day against tip
 st.bar_chart(data.groupby('day')['tip'].mean())
