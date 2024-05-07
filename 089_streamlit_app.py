@@ -20,9 +20,6 @@ st.xlabel('Day')
 st.ylabel('Tip')
 st.pyplot()
 
-# reading the database
-data = pd.read_csv("tips.csv")
-
 # Scatter plot using seaborn
 sns.scatterplot(x='day', y='tip', data=data, hue='sex')
 
