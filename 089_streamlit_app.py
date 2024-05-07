@@ -13,3 +13,4 @@ st.title("Bar Chart")
 # Setting the X and Y labels
 st.xlabel('Day')
 st.ylabel('Tip')
+st.pyplot()
