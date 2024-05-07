@@ -8,7 +8,8 @@ st.title("My Dashboard")
 
 # Bagian visualisasi data
 st.header("Selamat Datang")
-st.header("selamat melihat dashboardku")
+st.h1("selamat melihat dashboardku")
+st.h1("ini adalah dashboard tips. Semoga membantu")
 
 # Bar chart with day against tip
 st.bar_chart(data.groupby('day')['tip'].mean())
