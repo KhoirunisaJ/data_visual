@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 # reading the database
-data = pd.read_csv("C:\\Users\\Khoirunisa Jannatuzzahra\\Downloads\\tips.csv")
+data = pd.read_csv("tips.csv")
 
 # Bar chart with day against tip
 plt.bar(data['day'], data['tip'])
