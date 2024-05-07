@@ -19,7 +19,6 @@ st.bar_chart(data.groupby('day')['tip'].mean())
 # Setting the X and Y labels
 st.xlabel('Day')
 st.ylabel('Tip')
-st.pyplot()
 
 # Scatter plot using seaborn
 sns.scatterplot(x='day', y='tip', data=data, hue='sex')
