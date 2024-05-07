@@ -2,15 +2,15 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
 # reading the database
-file_path = "tips.csv"
-data = pd.read_csv(file_path, encoding='latin-1')
+data = pd.read_csv("tips.csv")
 
 # Bar chart with day against tip
-plt.bar(data['day'], data['tip'])
-plt.title("Bar Chart")
-# Setting the X and Y labels
-plt.xlabel('Day')
-plt.ylabel('Tip')
+fig, ax = plt.subplots()
+ax.bar(data['day'], data['tip'])
+ax.set_title("Bar Chart")
+ax.set_xlabel('Day')
+ax.set_ylabel('Tip')
+
+# Show plot in Streamlit app
 st.pyplot(fig)
