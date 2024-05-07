@@ -15,7 +15,7 @@ st.header("Selamat Datang")
 st.subheader("Jumlah Tips per hari")
 
 # Bar chart with day against tip
-st.bar_chart(data.groupby('day')['tip'].mean())
+sns.scatterplot(x='day', y='tip', data=data, hue='sex')
 
 # Setting the X and Y labels
 st.pyplot()
