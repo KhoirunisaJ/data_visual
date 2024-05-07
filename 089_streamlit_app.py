@@ -14,7 +14,7 @@ st.title("Bar Chart")
 st.header("Selamat Datang")
 # Title for the chart
 st.subheader("Bar Chart dan Scatter Plot")
-st.subheader("Jumlah Tips per hari")
+st.h1("Jumlah Tips per hari")
 
 fig, ax = plt.subplots()
 sns.scatterplot(x='day', y='tip', data=data, hue='sex', ax=ax)
