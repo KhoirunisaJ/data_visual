@@ -13,3 +13,4 @@ plt.title("Bar Chart")
 # Setting the X and Y labels
 plt.xlabel('Day')
 plt.ylabel('Tip')
+st.pyplot(fig)
