@@ -4,6 +4,11 @@ import pandas as pd
 # reading the database
 data = pd.read_csv("tips.csv")
 
+st.title("Dashboard TIPS")
+
+# Bagian visualisasi data
+st.header("Raw Data")
+
 # Bar chart with day against tip
 st.bar_chart(data.groupby('day')['tip'].mean())
 
